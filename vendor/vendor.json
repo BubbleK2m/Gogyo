@@ -1,0 +1,31 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "69q4K85KCjqPDg4HznrUb4j3Kds=",
+			"path": "github.com/PuerkitoBio/goquery",
+			"revision": "1a71cc719d0d5b9e4f14ae072bef08b576b0bab5",
+			"revisionTime": "2017-10-07T14:12:28Z"
+		},
+		{
+			"checksumSHA1": "Bgs5fKx4V8jxL/m/krOLmhS4az4=",
+			"path": "github.com/andybalholm/cascadia",
+			"revision": "349dd0209470eabd9514242c688c403c0926d266",
+			"revisionTime": "2016-12-24T14:14:13Z"
+		},
+		{
+			"checksumSHA1": "/PGQlVbw8jILX3tLQaYAg6bTAFI=",
+			"path": "golang.org/x/net/html",
+			"revision": "1087133bc4af3073e18add999345c6ae75918503",
+			"revisionTime": "2017-10-13T01:45:07Z"
+		},
+		{
+			"checksumSHA1": "iWvOOLdDxvI4AVX6px6/HYBPeaQ=",
+			"path": "golang.org/x/net/html/atom",
+			"revision": "1087133bc4af3073e18add999345c6ae75918503",
+			"revisionTime": "2017-10-13T01:45:07Z"
+		}
+	],
+	"rootPath": "github.com/DSMdongly/gogyo"
+}
