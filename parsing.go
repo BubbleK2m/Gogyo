@@ -82,12 +82,7 @@ func ParseMonthlyMenus(school School, year int, month int) map[int]Menu {
 				return unicode.IsNumber(code) || !unicode.IsLetter(code)
 			})
 
-			// log.Printf("chunks: %v", chunks)
-			// log.Printf("chunks: %d", len(chunks))
-
 			for _, chunk := range chunks {
-				// log.Printf("chunk: %s", chunk)
-
 				meal := NewMeal(MealName(chunk))
 				daily[position] = append(daily[position], *meal)
 			}
