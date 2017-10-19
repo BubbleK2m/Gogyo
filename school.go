@@ -2,8 +2,6 @@ package gogyo
 
 import (
 	"strings"
-
-	"github.com/DSMdongly/gogyo"
 )
 
 type SchoolKind int
