@@ -1,5 +1,11 @@
 package gogyo
 
+import (
+	"strings"
+
+	"github.com/DSMdongly/gogyo"
+)
+
 type SchoolKind int
 
 const (
@@ -8,6 +14,17 @@ const (
 	MiddleSchool
 	HighSchool
 )
+
+func GetSchoolKind(kind string) SchoolKind {
+	kinds := map[string]SchoolKind{
+		"kinder-garden":    KinderGarden,
+		"elementry-school": ElementrySchool,
+		"middle-school":    MiddleSchool,
+		"high-school":      HighSchool,
+	}
+
+	return kinds[strings.ToLower(kind)]
+}
 
 type SchoolRegion string
 
@@ -30,6 +47,30 @@ const (
 	Jeonnam                = "stu.jne.go.kr"
 	Jeju                   = "stu.jje.go.kr"
 )
+
+func GetSchoolRegion(region string) SchoolRegion {
+	regions := map[string]SchoolRegion{
+		"seoul":     gogyo.Seoul,
+		"incheon":   gogyo.Incheon,
+		"busan":     gogyo.Busan,
+		"gwangju":   gogyo.Gwangju,
+		"daejeon":   gogyo.Daejeon,
+		"daegu":     gogyo.Daegu,
+		"sejong":    gogyo.Sejong,
+		"ulsan":     gogyo.Ulsan,
+		"gyeonggi":  gogyo.Gyeonggi,
+		"kangwon":   gogyo.Kangwon,
+		"chungbuk":  gogyo.Chungbuk,
+		"chungnam":  gogyo.Chungnam,
+		"gyeongbuk": gogyo.Gyeongbuk,
+		"gyeongnam": gogyo.Gyeongnam,
+		"jeonbuk":   gogyo.Jeonbuk,
+		"jeonnam":   gogyo.Jeonnam,
+		"jeju":      gogyo.Jeju,
+	}
+
+	return regions[strings.ToLower(region)]
+}
 
 type SchoolCode string
 
